@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Parking Management System</title>
+		<style>
+			h1
+			{
+				font-family: sans-serif;
+  				background: -webkit-linear-gradient(#FF0000, #000000);
+  				-webkit-background-clip: text;
+  				-webkit-text-fill-color: transparent;
+			}
+			table, th, td 
+			{
+ 				border: 1px solid black;
+ 				border-collapse: collapse;
+ 				border-spacing: 5px;
+			}
+			th, td 
+			{
+				text-align: center;
+  				padding: 15px;
+
+			}
+			#t01 tr:nth-child(even)
+			{
+  				background-color: #eee;
+			}
+			#t01 tr:nth-child(odd) 
+			{
+  				background-color: #fff;
+			}	
+			p{
+				font-size: 20px;	
+			}
+			dt
+			{
+				font-size: 20px;
+			}
+			dd
+			{
+				font-size: 20px;
+			}
+			footer
+			{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<header>
+		<h1>Parking Management System</h1>
+	</header>
+	<hr>
+	<h2>Dashboard</h2>
+	<p>Dashboard gives information about each parking area like total number of slots in a parking area, number of slots reserved, occupied slots, available/free slots</p>
+	<dl>
+		<dt><b>Reserved Slots</b></dt>
+		<dd>This gives information about the total number of slots reserved for employees in a parking area</dd>
+		<dt><b>Occupied Slots</b></dt>
+		<dd>This gives information about the total number of vehicles present in the parking area</dd>
+		<dt><b>Available Slots</b></dt>
+		<dd>This gives information about the total number of free slots available for parking excluding the reserved slots</dd>
+	</dl>
+
+	<table id="t01" style="width:100%">
+  		<tr>
+  			<th>Parking Area</th>
+  			<th>Total slots</th>
+    		<th>Reserved Slots</th>
+    		<th>Occupied Slots</th>
+    		<th>Available Slots</th>
+  		</tr>
+  		<tr>
+  			<td>P1</td>
+  			<td>250</td>
+  			<td>40</td>
+  			<td>150</td>
+  			<td>60</td>
+ 		 </tr>
+ 		 <tr>
+  			<td>P2</td>
+  			<td>250</td>
+  			<td>48</td>
+  			<td>80</td>
+  			<td>122</td>
+  		</tr>
+  		<tr>
+  			<td>P3</td>
+  			<td>200</td>
+  			<td>35</td>
+  			<td>59</td>
+  			<td>106</td>
+  		</tr>
+  		<tr>
+  			<td>P4</td>
+  			<td>260</td>
+  			<td>20</td>
+  			<td>78</td>
+  			<td>162</td>
+  		</tr>
+	</table>
+	<footer>
+		<a href="home.html">
+			<img src="homepageicon.png" alt="homeicon" width="30" height="30">
+		</a>
+	</footer>
+</html>
