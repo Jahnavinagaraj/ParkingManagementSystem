@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pms.xsl"?>
+<dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pms.xsd">
+	<domain>Parking Management System</domain>
+	<page>Dashboard</page>
+	<slots>
+		<slot>
+			<parkingslot>P1</parkingslot>
+			<total>250</total>
+			<reserved>40</reserved>
+			<occupied>150</occupied>
+			<available>60</available>
+		</slot>
+		<slot>
+			<parkingslot>P2</parkingslot>
+			<total>250</total>
+			<reserved>48</reserved>
+			<occupied>80</occupied>
+			<available>122</available>
+		</slot>
+		<slot>
+			<parkingslot>P3</parkingslot>
+			<total>200</total>
+			<reserved>35</reserved>
+			<occupied>59</occupied>
+			<available>106</available>
+		</slot>
+		<slot>
+			<parkingslot>P4</parkingslot>
+			<total>260</total>
+			<reserved>20</reserved>
+			<occupied>78</occupied>
+			<available>162</available>
+		</slot>
+		<slot>
+			<parkingslot>P3</parkingslot>
+			<total>240</total>
+			<reserved>28</reserved>
+			<occupied>80</occupied>
+			<available>132</available>
+		</slot>
+	</slots>
+</dashboard>
