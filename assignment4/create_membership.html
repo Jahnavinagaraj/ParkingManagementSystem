@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Parking Management System</title>
+		<link rel="stylesheet" href="pms.css">
+		<script type="text/javascript" src="formvalidator.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Parking Management System</h1>
+		</header>
+		<hr>
+		<div class="topnav">
+  			<a href="contact">Contact</a>
+  			<a href="about">About</a>
+  			<a href="create_membership.html">Create Membership</a>
+  			<a href="secondpage.html">Dashboard</a>
+  			<a href="index.html">Home</a>
+		</div>
+		<form id="createmember" name="createmember" onsubmit = "return(validateForm());">
+			<h2>Create a Member</h2>
+			<div class="label">
+    		<input type="text" placeholder="Name" id="name" name="Name" onkeyup="validateName()" required=""><br><br>   
+    		<input type="tel" placeholder="Phone Number" id="phone" name="Phone" onkeyup="setColorPhone()" required><br><br>  
+    		<input type="email" placeholder="Email" id="email" name="EMail" onkeyup="validateEmail()" onkeydown="validateEmail()" required ><br><br>
+    		<textarea type="text" placeholder="Address" id="address" onkeyup="validateAddress()" onkeydown="validateAddress()" required></textarea><span id='remainingC'></span><br><br>
+   			<input type="vehicle number" placeholder="Vehicle Number" id="vehical_number" name="VehicleNo" onkeyup="validateVehicleNo()" required ><br>
+   			</div>
+ 			<p><input type="submit" onclick="" value="Submit" name="submit">  
+    		</p>          
+		</form>
+	</body>
+</html>
