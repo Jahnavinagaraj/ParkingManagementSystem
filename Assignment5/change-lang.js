@@ -19,5 +19,5 @@ function loadLang(xml)
 	document.getElementById("aside").innerHTML = sideContent[0].childNodes[0].nodeValue;
 	
 	var mainContent = xmlDoc.getElementsByTagName("mainpara");
-	document.getElementById("mainpara").innerHTML = mainContent[0].childnodes[0].nodeValue;
+	document.getElementById("mainpara").innerHTML = mainContent[0].childNodes[0].nodeValue;
 }
