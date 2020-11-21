@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+		<h1>Sistema de gestión de aparcamiento</h1>
+		<aside>Sistema de gestión de aparcamiento para gestionar los registros de los vehículos entrantes y salientes en la casa de estacionamiento.</aside>
+		<mainpara>Hoy en día, en muchos lugares públicos, como centros comerciales, sistemas de multiplexación, hospitales, oficinas, áreas de mercado, existe un problema crucial de estacionamiento de vehículos. El área de estacionamiento de vehículos tiene muchos carriles / espacios para estacionamiento de automóviles, por lo que para estacionar un vehículo hay que buscar todos los carriles, además esto implica mucho trabajo manual y requiere mucho tiempo.
+El sistema de administración de estacionamiento rastreará la entrada y salida de autos, mantendrá una lista de autos dentro del estacionamiento y determinará si el estacionamiento está lleno o no. Determinará el costo de por vehículo según su consumo de tiempo. Un vehículo puede tener membresía para estacionar el vehículo en esa situación, verifique los detalles de la membresía antes de salir.
+       </mainpara>
+</index> 
