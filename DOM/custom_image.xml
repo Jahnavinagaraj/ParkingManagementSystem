@@ -1,1 +1,7 @@
-function customImage()
+<?xml version="1.0" encoding="utf-8" ?>
+<customimage>
+		<banner>school_van_parking.png</banner>
+		<parkingimage>images.png</parkingimage>
+		<advideo>van_parking_video.mp4</advideo>
+		
+</customimage> 
