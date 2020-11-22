@@ -12,6 +12,7 @@ function customImage()
 function loadImage(xml)
 {
 	xmlDoc=xml.responseXML;
+	
 	var banner=xmlDoc.getElementsByTagName("banner");
 	documnet.getElementById("banner").setAttribute("src",banner[0].childnodes[0].nodeValue);
 	
