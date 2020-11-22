@@ -3,7 +3,7 @@ function customImage()
 	var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     loadLang(this);
+     loadImage(this);
     }
   };
   xmlhttp.open("GET", "custom_image.xml", true);
@@ -13,11 +13,12 @@ function loadImage(xml)
 {
 	xmlDoc=xml.responseXML;
 	var banner=xmlDoc.getElementsByTagName("banner");
-	documnet.getElementById("banner").innerHTML=banner[0].childNodes[0].nodeValue;
+	documnet.getElementById("banner").setAttribute("src",banner[0].childnodes[0].nodeValue);
 	
 	var sideImage = xmlDoc.getElementsByTagName("parkingimage");
-	document.getElementById("parkingimage").innerHTML = sideImage[0].childNodes[0].nodeValue;
+	document.getElementById("secondimage").style.background = "url("+secondimage[0].childNodes[0].value+")";
 	
 	var introVideo = xmlDoc.getElementsByTagName("advideo");
-	document.getElementById("advideo").innerHTML = introVideo[0].childnodes[0].nodeValue;
+	document.getElementById("advideo").setAttribute("src",introVideo[0].childnodes[0].nodeValue);
 }
+
