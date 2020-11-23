@@ -17,7 +17,7 @@ function loadImage(xml)
 	document.getElementById("banner").setAttribute("src",banner[0].childNodes[0].nodeValue);
 	
 	var sideImage = xmlDoc.getElementsByTagName("parkingimage");
-	document.getElementById("secondimage").style.background = "url("+secondimage[0].childNodes[0].value+")";
+	document.getElementById("secondimage").style.background = "url("+sideImage[0].childNodes[0].value+")";
 	
 	var introVideo = xmlDoc.getElementsByTagName("advideo");
 	document.getElementById("advideo").setAttribute("src",introVideo[0].childNodes[0].nodeValue);
