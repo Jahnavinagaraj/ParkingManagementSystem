@@ -33,7 +33,7 @@ function checkSession(){
 }
 
 function createSession(){
-	var secs = 30;
+	var secs = 120;
 	var now = new Date();
     var exp = new Date(now.getTime() + secs*1000);
     document.cookie = 'SessionAlive=1; expires='+exp.toUTCString();
