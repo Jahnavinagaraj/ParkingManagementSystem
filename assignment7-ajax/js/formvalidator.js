@@ -20,23 +20,23 @@ function validateName(){
 }
 
 function validateVehicleNo(){
-	var vehicalNumber = document.getElementById("vehical_number");
-    vehicalNumber.value = vehicalNumber.value.toUpperCase();
-    var vehicleLength = vehicalNumber.value.length
+	var vehicleNumber = document.getElementById("vehicle_number");
+    vehicleNumber.value = vehicleNumber.value.toUpperCase();
+    var vehicleLength = vehicleNumber.value.length
     
-    if(!/^[a-zA-Z0-9 ]+$/.test(vehicalNumber.value)){
+    if(!/^[a-zA-Z0-9 ]+$/.test(vehicleNumber.value)){
 		document.getElementById('veherror').innerHTML= "Vehicle number should be alphanumeric only";
-	    document.getElementById("vehical_number").style.borderColor = "red";
+	    document.getElementById("vehicle_number").style.borderColor = "red";
 		return false;
     }
     else if (vehicleLength < 3){
 		document.getElementById('veherror').innerHTML= "Vehicle Number should be at least 3 characters length";
-	    document.getElementById("vehical_number").style.borderColor = "red";
+	    document.getElementById("vehicle_number").style.borderColor = "red";
 		return false;
     }
     else{
 		document.getElementById('veherror').innerHTML="";
-        document.getElementById("vehical_number").style.borderColor = "green";
+        document.getElementById("vehicle_number").style.borderColor = "green";
 		return true;
     }
 }

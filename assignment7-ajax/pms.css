@@ -177,3 +177,11 @@ textarea{
   width: 20%;
 margin-left: 500px;
 }
+.mem_sbt{
+  margin: 0;
+  position: absolute;
+  top: 32%;
+  left: 46%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

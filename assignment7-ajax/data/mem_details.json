@@ -1,0 +1,18 @@
+{
+   "members":[
+      {
+         "name":"Anup",
+         "pho_no":"9736471264",
+         "email":"anup@gmail.com",
+         "address":"JP Nagar",
+         "vehicle_number":"KA074678"
+      },
+      {
+         "name":"Swathi",
+         "pho_no":"836234679",
+         "email":"swathi@gmail.com",
+         "address":"RR Nagar",
+         "vehicle_number":"KA053457"
+      }
+   ]
+}

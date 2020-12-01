@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Member Details</title>
+	<link rel="stylesheet" href="pms.css">
+	<script type="text/javascript" src="js/formvalidator.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<h1>Member Details</h1>
+	<hr>
+		<div class="topnav">
+  			<a href="contact">Contact</a>
+  			<a href="about">About</a>
+  			<a href="create_membership.html">Create Membership</a>
+  			<a href="secondpage.html">Dashboard</a>
+  			<a href="home.html">Home</a>
+		</div>
+		<hr>
+		<div class="mem_sbt">
+		<input type="vehicle number" placeholder="Enter Vehicle Number" id="vehicle_number" name="VehicleNo" onkeyup="validateVehicleNo()" required ><span style="color:red" id='veherror'></span><br>
+		
+		<button type="button" onclick="getVehicleDetails()">Submit</button>
+		</div>
+		<div id="mem_details"></div>
+</body>
+</html>

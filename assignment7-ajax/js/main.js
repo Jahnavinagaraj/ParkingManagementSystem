@@ -43,3 +43,29 @@ function createSession(){
         return false;
     }
 }
+function getVehicleDetails(form) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+		console.log(this.responseText)
+     var members_list=JSON.parse(this.responseText).members;
+     var isVehicleFound=false;
+	 var veh_no= document.getElementById("vehicle_number").value;
+     for(var i=0; i<members_list.length; i++)
+     {
+     	if(veh_no==members_list[i].vehicle_number)
+     	{
+     		document.getElementById("mem_details").innerHTML=members_list[i].name;
+     		isVehicleFound=true;
+     	}
+     }
+     if (isVehicleFound==false)
+     {
+     	document.getElementById("mem_details").innerHTML="No Vehicle details found";
+     }
+     
+    }
+  };
+  xhttp.open("GET", "data/mem_details.json", true);
+  xhttp.send();
+  }
