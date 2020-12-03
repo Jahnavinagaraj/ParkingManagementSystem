@@ -43,7 +43,7 @@ function createSession(){
         return false;
     }
 }
-function getVehicleDetails(form) {
+function getVehicleDetails() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -55,7 +55,8 @@ function getVehicleDetails(form) {
      {
      	if(veh_no==members_list[i].vehicle_number)
      	{
-     		document.getElementById("mem_details").innerHTML=members_list[i].name;
+     		var t= "<header><b>Member Details</b><header><br/><table><tr><td>Name</td><td>"+members_list[i].name+"</td></tr><tr><td>Phone No</td><td>"+members_list[i].pho_no+"</td></tr><tr><td>Email id</td><td>"+members_list[i].email+"</td></tr><tr><td>Address</td><td>"+members_list[i].address+"</td></tr><tr><td>Vehicle Number</td><td>"+members_list[i].vehicle_number+"</td></tr></table>"
+     		document.getElementById("mem_details").innerHTML=t;
      		isVehicleFound=true;
      	}
      }

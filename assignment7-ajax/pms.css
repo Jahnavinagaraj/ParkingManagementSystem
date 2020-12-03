@@ -30,6 +30,24 @@ body{
   background-color: #B5F9EE;
   color: black;
 }
+#lgbody
+{
+  background-color: #ECFFFC;
+}
+#lgh1{
+  text-align: center;
+}
+#lguser{
+  text-align: center;
+}
+#lgpass
+{text-align: center;
+}
+#lgreset
+{
+  text-align: center;
+  margin-top: 10px;
+}
 .para
 {
 	width: 770px;
@@ -122,16 +140,28 @@ h1
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+#mem_details
+{
+  position: absolute;
+  right: 530px;
+  width: 350px; 
+
+}
+header
+{
+  text-align: center;
+  font-size: 20px;
+}
 table, th, td 
 {
-	border: 1px solid black;
+	border: 2px solid black;
  	border-collapse: collapse;
 	border-spacing: 5px;
 }
 th, td 
 {
 	text-align: center;
- 	padding: 15px;
+ 	padding: 10px;
 }
 #t01 tr:nth-child(even)
 {
@@ -181,7 +211,11 @@ margin-left: 500px;
   margin: 0;
   position: absolute;
   top: 32%;
-  left: 46%;
+  left: 47%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+#vehicle_number
+{
+  text-align: center;
 }

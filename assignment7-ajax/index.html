@@ -1,33 +1,23 @@
 <html>
-<head>
-<title>Login Page</title>
-<script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
-<form name="loginForm" method="post">
-<table width="30%" bgcolor="0099CC" align="center">
-
-<tr>
-<td colspan=2><center><font size=4><b>Login Page</b></font></center></td>
-</tr>
-
-<tr>
-<td>Username:</td>
-<td><input type="text" size=25 name="userid" required></td>
-</tr>
-
-<tr>
-<td>Password:</td>
-<td><input type="Password" size=25 name="pwd" required></td>
-</tr>
-
-<tr>
-<td ><input type="Reset"></td>
-<td><input type="submit" onclick="return checkLogin(this.form)" value="Login"></td>
-</tr>
-
-</table>
-</form>
-
-</body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login Page</title>
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="pms.css">
+	</head>
+	<body id="lgbody">
+	<form id="lgform" name="loginForm" method="post">
+		<h1 id="lgh1" >Login Page</h1>
+		<br>
+		<input type="text" id="lguser" placeholder="Username" name="userid" required>
+		<br>
+		<br>
+		<input type="Password" id="lgpass" placeholder="Password" name="pwd" required>
+		<br>
+		<br>
+		<input type="button" id="lgpwd" name="Password" onclick="return checkLogin(this
+		.form)" value="Login">
+		<input type="button" id="lgreset" name="Reset" value="Reset">
+	</form>
+	</body>
 </html>
