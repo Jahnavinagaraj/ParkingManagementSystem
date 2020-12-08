@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Parking Management System</title>
+		<link rel="stylesheet" href="pms.css">
+		<link rel="html" href="create_membership.html">
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/custom_image.js"></script>
+	</head>
+	<body onload="customImage()" onclick="checkSession()">
+		<header>
+			<h1>Parking Management System</h1>
+		</header>
+		<hr>
+		<div class="topnav">
+  			<a href="contact">Contact</a>
+  			<a href="filter.html">Filter</a>
+  			<a href="create_membership.html">Create Membership</a>
+			<a href="member_details.html">Member Details</a>
+  			<a href="secondpage.html">Dashboard</a>
+  			<a href="home.html">Home</a>
+		</div>
+		<figure>
+			<embed id="banner" src="image.jpg" alt="Parking lot" class="center" height="300">
+		</figure>
+		<aside>
+			<p><b>Parking management system for managing the records of the incoming and outgoing vehicles in parking house.</b></p>
+		</aside>
+		<div class="para">
+			<p class="paragraph"> Now days in many public places such as malls, multiplex system, hospitals, offices, market areas there is a crucial problem of vehicle parking. The vehicle parking area has many lanes/slots for car parking, so to park a vehicle one has to look for all the lanes, moreover this involves a lot of manual labor and time consuming.
+			<b>Parking management system will track the entry and exit of cars</b>, maintain a listing of cars within the parking lot, and determine if the parking lot is full or not. It will determine the cost of per vehicle according to their time consumption. A Vehicle can have membership to park the vehicle in that situation check for the membership details before exit.</p>
+		</div>
+		<div id="secondimage" class="background">
+  			<div class="transbox">
+    			<p>Parking lot</p>
+  			</div>
+		</div>
+		<object id="advideo" class="objimg" data="video.mp4" autoplay="false" width="400" height="300"></object>
+		<h3>Features of Application</h3>
+		<ul>
+			<li><a href="secondpage.html">Dashboard</a>
+				<ol>
+					<li >Parking Area</li>
+					<li>Total Slots</li>
+					<li>Reserved Slot</li>
+					<li>Occupied Slots</li>
+					<li>Available Slots</li>
+				</ol>
+			</li>
+			<li>Parking Management
+				<ol>
+					<li>Create/Update/Delete Parking Area</li>
+					<li>Assign/Delete a Parking Slot to a member</li>
+					<li>Reserve a Parking slot for an employee</li>
+				</ol>
+			</li>
+			
+			<li>Vehicle Management
+				<ol>
+					<li>Add/Update/Delete a vehicle Information</li>
+					<li>Assign a Parking slot for a vehicle</li>
+				</ol>
+			</li>
+			<li>Membership Management
+				<ol>
+					<li>Create/Update/Delete a Member</li>
+					<li>Generate Membership Card</li>
+					<li>Create/Update/Delete a membership plan</li>
+				</ol>
+			</li>
+			<li>Price Calculation
+				<ol>
+					<li>Exit a vehicle from a slot</li>
+					<li>Generate Bill</li>
+				</ol>
+			</li>
+		
+		</ul>
+		
+		<iframe src="secondpage.html" style="height:250px; width:520px; margin-left: 40px;border: 2px solid black" title="Iframe-Dashboard"></iframe>
+		<footer>
+			<a href="secondpage.html">
+				<img src="dashboard.png" alt="dashboardicon" width="30" height="30">
+			</a>
+		</footer>
+	</body>
+</html>
