@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login Page</title>
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="pms.css">
+	</head>
+	<body id="lgbody">
+	<form id="lgform" name="loginForm" method="post">
+		<h1 id="lgh1" >Login Page</h1>
+		<br>
+		<input type="text" id="lguser" placeholder="Username" name="userid" required>
+		<br>
+		<br>
+		<input type="Password" id="lgpass" placeholder="Password" name="pwd" required>
+		<br>
+		<br>
+		<input type="button" id="lgpwd" name="Password" onclick="return checkLogin(this
+		.form)" value="Login">
+		<input type="button" id="lgreset" name="Reset" value="Reset">
+	</form>
+	</body>
+</html>

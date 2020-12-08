@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pms.css">
+    <script src="js/angular.js"></script>
+    <script src="js/filter_app.js"></script>
+</head>
+<body ng-app="MyApp">
+    <h1>Member Details</h1>
+    <hr>
+    <div class="topnav">
+            <a href="contact">Contact</a>
+            <a href="filter.html">Filter</a>
+            <a href="create_membership.html">Create Membership</a>
+            <a href="member_details.html">Member Details</a>
+            <a href="secondpage.html">Dashboard</a>
+            <a href="home.html">Home</a>
+        </div>
+        <hr>
+    <div ng-controller="MyCtrl">
+        <input type="number"  step="1" min="0" max="4" ng-model="rowlimit" />
+        <br \>
+        <br \>
+
+        <input type="text" placeholder="Seach Member" ng-model="Search" />
+        <br \>
+        <br \>
+        <h2 class="filter_h2">Member Details</h2>
+        <table id="filter_table">
+            <tr>
+                <th>Name</th>
+                <th>Phone No</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Vehicle Number</th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="member in members | limitTo:rowlimit |filter:Search | orderBy:'name' ">
+                    <td>{{member.name | uppercase}}</td>
+                    <td>{{member.tel }}</td>
+                    <td>{{member.email | lowercase}}</td>
+                    <td>{{member.address | uppercase}}</td>
+                    <td> {{member.vehicle_number }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
